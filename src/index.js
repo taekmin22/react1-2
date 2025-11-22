@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const myElement = <div>I Love JSX!<div>hahaha</div></div>; // JSX 
+/*
+const myElement = <div style={{backgroundColor : "red"}}>I Love JSX!<div>hahaha</div></div>; // JSX 
 const myElement1 = React.createElement('h1', {}, 'I do not use JSX!'); //withour JSX
 const myElement2 = <h1>React is {5 + 5} times better with JSX</h1>; //연산 가능, jsx 표현식
 
@@ -18,6 +19,7 @@ if (temp_number > 10) {
 
 const myElement3 = <div>{temp_number} === this number? : {temp_text}</div>
 const myElement4 = <div>{temp_number} === {(temp_number > 10)? "o 10" : "n o 10"}</div>
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -31,13 +33,16 @@ root.render(
   </>
 );
 
-/*root.render(
+*/
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
   
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-*/
+
 
 
 
